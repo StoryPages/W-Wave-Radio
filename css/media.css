@@ -1,0 +1,1001 @@
+:root {
+  --gap: 30px;
+  --color-mirage: #121723;
+  --color-electric-violet: #6d31ee;
+  --color-athens-gray: #e6e8ec;
+  --color-gray-chateau: #a1a6b4;
+  --color-white: #fff;
+  --color-melrose: #aa9dfa;
+  --color-buff: #f0d288;
+  --color-mischka: #d2d5dd;
+  --color-charade: #292e39;
+  --color-tussock: #bb973e;
+  --color-daisy-bush: #4f28a5;
+  --color-electric-violet: #6d31ee;
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    max-width: 854px;
+  }
+
+  /* header */
+  .header {
+    position: relative;
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 64px;
+    border: 1px solid var(--color-athens-gray);
+  }
+
+  .header__container {
+    flex-wrap: wrap;
+    gap: 26px;
+    padding: 28px 0 0 0;
+  }
+
+
+  .header__logo {
+    margin: 0;
+    order: 1;
+  }
+
+  .header__search {
+    order: 2;
+  }
+
+  .header__nav {
+    align-items: center;
+    flex-grow: 1;
+    margin: 0;
+    max-width: 100%;
+    height: 60px;
+    z-index: 1;
+    order: 3;
+  }
+
+  .header-nav__list {
+    width: 100%;
+  }
+
+  /* hero */
+  .hero__container {
+    gap: 10px;
+    padding-top: 91px;
+    padding-bottom: 89px;
+    background-size: 31%;
+    background-position: right 1px top 75px;
+  }
+
+  .hero__descr {
+    margin-bottom: 10px;
+    width: 67%;
+  }
+
+  .hero__btn {
+    padding: 23px 6.5%;
+  }
+
+  /* podcasts */
+  .podcasts__heading {
+    margin-bottom: 25px;
+  }
+
+  .podcasts-list__item {
+    gap: 7%;
+    min-height: 140px;
+  }
+
+  .podcasts-item__inner {
+    padding: 44px 40px 35px 0;
+  }
+
+  /* transfers */
+  .transfers__left {
+    width: 98%;
+  }
+
+  .transfers__list {
+    --offsets: 1;
+  }
+
+  .transfers-item__inner {
+    padding: 19px 20px 20px 14px;
+  }
+
+  /* guests */
+  .guests__descr {
+    width: 70%;
+  }
+
+  .guests__descr {
+    margin-bottom: 48px;
+  }
+
+  .guests-inner__descr {
+    max-width: 360px;
+  }
+
+  /* playlists */
+  .playlists__container {
+    flex-wrap: wrap;
+    gap: 14px;
+    padding-bottom: 88px;
+  }
+
+  .playlists__wraptxt {
+    width: 100%;
+  }
+
+  .playlists__list {
+    --offsets: 2;
+  }
+
+  .playlists-list__item {
+    display: flex;
+  }
+
+  .playlists-picture__img {
+    max-width: 112px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .playlists-item__flag {
+    top: 0;
+    left: 0;
+  }
+
+  .playlists-item__inner {
+    justify-content: center;
+    flex-grow: 1;
+    padding: 11px 0 15px 10px;
+  }
+
+  .product-container__info {
+    width: 57%;
+    background-position: top 114px left;
+    background-repeat: repeat-x;
+  }
+
+  .product-info__wratxt {
+    gap: 14px;
+  }
+
+  .product-container__image {
+    padding-top: 123px;
+  }
+
+  .product-picture__chip {
+    position: absolute;
+    left: 0px;
+    top: 118px;
+  }
+
+  .product__container {
+    padding-bottom: 95px;
+  }
+
+  /* about */
+  .about__text {
+    background-image: url('../img/svg/about-fon-1024.svg');
+    background-size: 31%;
+  }
+
+  .about-text__span {
+    max-width: 75%;
+  }
+
+  .about-text__descr {
+    width: 68%;
+  }
+
+  .about__list {
+    --offsets: 1;
+  }
+
+  .about-form__btn {
+    padding: 23px 6.5%;
+  }
+
+  /* footer */
+  .footer__wrap {
+    width: 20%;
+  }
+
+  .footer__nav {
+    width: 54%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    max-width: 600px;
+    padding: 0 30px;
+  }
+
+  /* header */
+  .header::before {
+    height: 60px;
+  }
+
+  .header__nav {
+    align-items: center;
+    max-width: 100%;
+    min-height: 60px;
+    overflow-x: auto;
+  }
+
+  .header__nav::-webkit-scrollbar {
+    height: 0;
+  }
+
+  .header-list__item {
+    padding: 0;
+  }
+
+  .header-nav__list {
+    flex-grow: 1;
+    max-width: 100%;
+    gap: 10%;
+  }
+
+  .header-item__link {
+    padding: 0;
+    font-size: 1.6rem;
+  }
+
+  /* hero */
+  .hero__container {
+    padding-top: 86px;
+    background: none;
+  }
+
+  .hero__descr {
+    width: 100%;
+  }
+
+  .hero__btn {
+    padding: 23px 10%;
+  }
+
+  /* podcasts */
+  .podcasts__container {
+    padding-bottom: 95px;
+  }
+
+  .podcasts__list {
+    row-gap: 30px;
+    --offsets: 0;
+  }
+
+  .podcasts-list__item {
+    gap: 5%;
+  }
+
+  .podcasts-item__inner {
+    padding: 40px 40px 35px 0;
+  }
+
+  .podcasts-inner__time {
+    margin-bottom: 6px;
+  }
+
+  .podcasts-item__picture {
+    height: 140px;
+  }
+
+  .podcasts-item__time {
+    padding: 3px 8px 0px 9px;
+  }
+
+  /* transfers */
+  .transfers {
+    position: relative;
+  }
+
+  .transfers__container {
+    flex-wrap: wrap;
+    padding-top: 91px;
+    padding-bottom: 60px;
+  }
+
+  .transfers__left {
+    margin-bottom: 117px;
+  }
+
+  .transfers-left__wrapper {
+    display: none;
+  }
+
+  .transfers__list {
+    padding: 0;
+  }
+
+  .transfers-left__wrapper-768 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0 25px 0;
+    border-top: 1px solid var(--color-athens-gray);
+  }
+
+  .transfers-wrapper-768__wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    max-width: 255px;
+  }
+
+  .transfers-wrap__btn {
+    padding: 8px 21%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--color-mirage);
+    border-radius: 77px;
+    border: 2px solid var(--color-mirage);
+    transition: 0.3s ease;
+  }
+
+  .transfers-wrap__btn:hover {
+    color: var(--color-white);
+    background-color: var(--color-melrose);
+    border-color: var(--color-melrose);
+  }
+
+  .transfers-wrap__btn:focus {
+    color: var(--color-white);
+    background-color: var(--color-melrose);
+    border-color: var(--color-electric-violet);
+  }
+
+  .transfers-wrap__btn:focus-visible {
+    color: var(--color-white);
+    background-color: var(--color-melrose);
+    border-color: var(--color-electric-violet);
+  }
+
+  .transfers-wrap__btn:active {
+    color: var(--color-white);
+    background-color: var(--color-electric-violet);
+  }
+
+  .transfers-wrap__span--gray {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--color-gray-chateau);
+  }
+
+  /* guests */
+  .guests__descr {
+    width: 100%;
+  }
+
+  .guests-list__item {
+    flex-wrap: wrap;
+    gap: 27px;
+  }
+
+  .guests-item__inner {
+    min-height: 275px;
+  }
+
+  /* playlists */
+  .playlists__container {
+    gap: 12px;
+    padding-bottom: 112px;
+  }
+
+  .playlists__heading {
+    margin-bottom: 8px;
+  }
+
+  .playlists__list {
+    row-gap: 28px;
+    --offsets: 1;
+  }
+
+  .playlists-item__picture {
+    height: 112px;
+  }
+
+  /* product */
+  .product__container {
+    flex-wrap: wrap-reverse;
+    gap: 47px;
+    padding-top: 54px;
+  }
+
+  .product-container__image {
+    padding: 0;
+    width: 100%;
+  }
+
+  .product-picture__chip {
+    left: 0px;
+    top: 0px;
+  }
+
+  .product-container__info {
+    width: 100%;
+  }
+
+  .product__heading {
+    max-width: 91%;
+  }
+
+  .product-container__info {
+    background-image: url('../img/svg/product-border-768.svg');
+  }
+
+  .product-info__wratxt {
+    margin-bottom: 27px;
+  }
+
+  .product-wraptxt__descr {
+    max-width: 99%;
+  }
+
+  /* about */
+  .about {
+    background-image: url('../img/svg/about-fon-768.svg');
+    background-repeat: no-repeat;
+    background-position: left top 25%;
+  }
+
+  .about__text {
+    margin-bottom: 172px;
+    background: none;
+  }
+
+  .about-text__span {
+    max-width: 100%;
+  }
+
+  .about-text__descr {
+    width: 100%;
+  }
+
+  .about-form__inner {
+    flex-wrap: wrap;
+  }
+
+  .about-form__btn {
+    padding: 25px 10%;
+    margin-bottom: 32px;
+  }
+
+  /* .footer */
+  .footer {
+    background-position: bottom 8% center;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    gap: 65px;
+    padding-bottom: 87px;
+    width: 100%;
+  }
+
+  .footer-wrap__social-media {
+    justify-content: center;
+  }
+
+  .footer__wrap {
+    align-items: center;
+    width: 100%;
+  }
+
+  .social-link__svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer__nav {
+    width: 100%;
+  }
+
+  .footer-nav__list {
+    column-gap: 30%;
+  }
+
+  .footer-list__item:not(:nth-child(3n)) {
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width:769px) and (max-width: 800px) {
+  .about {
+    background-position: left top 28%;
+  }
+}
+
+@media screen and (max-width:600px) {
+
+  /* header */
+  .header__nav {
+    flex-shrink: 0;
+    max-width: none;
+    width: calc(100% + 30px);
+  }
+
+
+  /* transfers */
+  .transfers::before {
+    bottom: 13%;
+  }
+
+  .transfers-left__wrapper {
+    flex-direction: column-reverse;
+    background-image: url('../img/svg/mic-320.svg');
+    position: absolute;
+    left: 0%;
+    bottom: 30px;
+    padding-left: 30%;
+    width: 100%;
+    height: 9%;
+    background-repeat: no-repeat;
+    background-position: left 7% center;
+  }
+
+  .transfers-wrapper__span--gray {
+    max-width: 250px;
+  }
+
+  .transfers-list__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .transfers-item__inner {
+    flex-grow: 1;
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .transfers-inner__heading {
+    font-size: 1.7rem;
+  }
+
+  /* playlists */
+  .playlists__list {
+    --offsets: 1;
+  }
+
+  .playlists-list__item {
+    flex-direction: column;
+  }
+
+  .playlists-item__picture {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .playlists-picture__img {
+    max-width: 100%;
+  }
+
+  .playlists-inner__heading {
+    font-size: 1.2rem;
+  }
+
+  /* product */
+  .product-container__info {
+    background-position: top 21% center;
+  }
+
+  /* about */
+  .about {
+    background-image: none;
+  }
+
+  .about__text {
+    margin-bottom: 50px;
+    background: none;
+  }
+
+  /* footer */
+  .footer__container {
+    align-items: center;
+  }
+
+  .footer__wrap {
+    width: 100%;
+  }
+
+  .footer-nav__list {
+    width: 100%;
+    column-count: 2;
+    column-gap: 115px;
+  }
+
+  .footer-list__item:not(:nth-child(4n)) {
+    margin-bottom: 28px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  /* global */
+  .heading-global {
+    font-size: 2.4rem;
+  }
+
+  /* header */
+  .header__container {
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 17px 0 0 0;
+  }
+
+  .header::before {
+    top: 51%;
+    height: 50px;
+  }
+
+  .header__nav {
+    min-height: 50px;
+  }
+
+  /* hero */
+  .hero__container {
+    gap: 5px;
+    padding-top: 33px;
+    padding-bottom: 41px;
+  }
+
+  .hero__heading {
+    font-size: 3.2rem;
+  }
+
+  .hero__span--wave {
+    font-size: 3.2rem;
+  }
+
+  .hero__descr {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+  }
+
+  .hero__btn {
+    padding: 15px 18%;
+    font-size: 1.6rem;
+  }
+
+  /* podcasts */
+  .podcasts__container {
+    padding-top: 54px;
+    padding-bottom: 57px;
+  }
+
+  .podcasts__heading {
+    margin-bottom: 17px;
+  }
+
+  .podcasts-list__item {
+    flex-direction: column;
+  }
+
+  .podcasts-item__picture {
+    height: auto;
+  }
+
+  .podcasts-picture__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .podcasts-item__inner {
+    padding: 25px 64px 27px 16px;
+  }
+
+  .podcasts-inner__name {
+    margin-bottom: 4px;
+    font-size: 1.6rem;
+  }
+
+  .podcasts-inner__span--gray {
+    font-size: 1.2rem;
+  }
+
+  .podcasts-item__time {
+    bottom: 94%;
+  }
+
+  /* transfers */
+  .transfers__container {
+    padding-top: 54px;
+    padding-bottom: 24px;
+  }
+
+  .transfers__left {
+    margin-bottom: 26px;
+  }
+
+  .transfers__list {
+    row-gap: 25px;
+  }
+
+  .transfers-picture__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .transfers-item__inner {
+    gap: 2px;
+    padding: 7px 12px 12px 10px;
+    min-height: 100px;
+  }
+
+  .transfers-inner__heading {
+    font-size: 1.2rem;
+  }
+
+  .transfers-inner__info--grey {
+    font-size: 0.9rem;
+  }
+
+  .transfers-inner__link {
+    font-size: 1.2rem;
+  }
+
+  .transfers-inner__link,
+  .transfers-link__svg path {
+    fill: var(--color-electric-violet);
+    color: var(--color-electric-violet);
+  }
+
+  .transfers-left__wrapper-768 {
+    padding: 30px 0 54px 0;
+  }
+
+  .transfers-wrapper-768__picrure {
+    max-width: 77px;
+  }
+
+  .transfers-picture__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .transfers-wrapper-768__wrap {
+    flex-direction: column-reverse;
+    max-width: 65%;
+  }
+
+  .transfers-wrap__span--gray {
+    font-size: 1.4rem;
+  }
+
+  .transfers-wrap__btn {
+    padding: 6px 13%;
+  }
+
+  /* guests */
+  .guests__container {
+    padding-top: 53px;
+    padding-bottom: 53px;
+  }
+
+  .guests__span {
+    margin-bottom: 4px;
+    font-size: 1.4rem;
+  }
+
+  .guests__descr {
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+  }
+
+  .guests__list {
+    gap: 29px;
+  }
+
+  .guests-list__item {
+    gap: 7px;
+  }
+
+  .guests-inner__descr {
+    margin-bottom: 26px;
+  }
+
+  .guests-inner__btn {
+    padding: 6px 14px;
+  }
+
+  /* playlists */
+  .playlists__container {
+    padding-top: 53px;
+    padding-bottom: 52px;
+  }
+
+  .playlists-wraptxt__descr {
+    max-width: 87%;
+    font-size: 1.2rem;
+    line-height: 16px;
+  }
+
+  .playlists-wraptxt__span--copy {
+    font-size: 1.2rem;
+  }
+
+  .playlists__list {
+    row-gap: 26px;
+    --offsets: 1;
+  }
+
+  .playlists-list__item {
+    flex-direction: column;
+  }
+
+  .playlists-item__picture {
+    height: auto;
+  }
+
+  .playlists-picture__img {
+    max-width: none;
+    width: 100%;
+  }
+
+  .playlists-item__flag {
+    left: auto;
+    right: 0;
+  }
+
+  .playlists-item__inner {
+    display: inline-block;
+    padding: 10px;
+    min-height: 46px;
+  }
+
+  .playlists-inner__heading {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+  }
+
+  .playlists-inner__descr {
+    font-size: 0.9rem;
+  }
+
+  /* product */
+  .product__container {
+    gap: 33px;
+    padding-bottom: 54px;
+  }
+
+  .product-container__info {
+    background-image: url('../img/svg/product-border-320.svg');
+    background-position: top 10% center;
+  }
+
+  .product__heading {
+    margin-bottom: 39px;
+    max-width: 100%;
+  }
+
+  .product-info__wratxt {
+    margin-bottom: 12px;
+  }
+
+  .product-wraptxt__descr {
+    font-size: 1.4rem;
+    line-height: 157%;
+  }
+
+  .product-info__price {
+    margin-bottom: 17px;
+    font-size: 2.4rem;
+  }
+
+  .product-info__btn {
+    padding: 13px 15px;
+    font-size: 1.6rem;
+  }
+
+  /* about */
+  .about {
+    background-image: none;
+  }
+
+  .about__container {
+    padding-top: 53px;
+    padding-bottom: 54px;
+  }
+
+  .about__text {
+    margin-bottom: 24px;
+  }
+
+  .about-text__span {
+    max-width: 94%;
+    font-size: 1.4rem;
+  }
+
+  .about-text__descr {
+    font-size: 1.4rem;
+  }
+
+  .about-item__inner {
+    padding-top: 10px;
+  }
+
+  .about-inner__heading {
+    width: 94%;
+    font-size: 1.4rem;
+  }
+
+  .about-inner__descr {
+    font-size: 1.2rem;
+    line-height: 16px;
+  }
+
+  .about-form__textarea {
+    padding: 17px 10px 10px 25px;
+    border-radius: 20px;
+  }
+
+  .about-form__inner {
+    gap: 30px;
+  }
+
+  .about-form__input {
+    padding: 10px 10px 10px 25px;
+    height: 50px;
+  }
+
+  .about-form__textarea::placeholder,
+  .about-form__input::placeholder {
+    font-size: 1.6rem;
+    color: var(--color-gray-chateau);
+  }
+
+  .about-form__btn {
+    padding: 17px 18%;
+    margin-bottom: 22px;
+    font-size: 1.6rem;
+  }
+
+  .about-label__span {
+    font-size: 0.9rem;
+  }
+
+  /* footer */
+  .footer__container {
+    gap: 38px;
+    padding-top: 54px;
+    padding-bottom: 9px;
+  }
+
+  .footer__nav {
+    padding: 30px 30px 22px 30px;
+    width: calc(100% + 2 * 30px);
+    background-color: var(--color-mirage);
+  }
+
+  .footer-nav__list {
+    column-gap: 27px;
+  }
+
+  .footer-list__item:not(:nth-child(4n)) {
+    margin-bottom: 21px;
+  }
+
+  .footer-item__link {
+    font-size: 1.2rem;
+  }
+
+  .footer__copy {
+    padding-top: 21px;
+  }
+
+  .footer-copy__span {
+    font-size: 1.2rem;
+  }
+
+}
